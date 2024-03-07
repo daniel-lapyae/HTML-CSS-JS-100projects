@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue;
+}
+
+ul {
+    margin: 100px auto;
+    width: 600px;
+    /* height: 100vh; */
+    list-style: none;
+}
+
+ul li {
+    background-color: #fff;
+    padding: 10px 20px;
+    margin: 10px 0;
+    width: 400px;
+    box-shadow: 0 0 10px;
+    border-radius: 5px;
+}
+
+ul li label {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+ul li label + input[type="radio"] {
+    display: none;
+}
+
+ul li .content {
+    display: none;
+    line-height: 30px;
+    transition: 1s;
+}
+
+ul label + input[type="radio"]:checked + .content {
+    display: block;
+}
+
+/* Git hub code */
+
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: crimson;
+    font-family: sans-serif;
+} */
+
+#accordion {
+    margin: 100px auto;
+    width: 600px;
+    height: 100vh;
+}
+
+#accordion li {
+    list-style: none;
+    width: 100%;
+    margin-bottom: 10px;
+    background: #fff;
+    padding: 10px;
+}
+
+#accordion li label {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: dodgerblue;
+    cursor: pointer;
+}
+
+#accordion li label span {
+    transform: rotate(90deg);
+    font-size: 22px;
+    color: dodgerblue;
+}
+
+#accordion label+input[type="radio"] {
+    display: none;
+}
+
+#accordion .content {
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+
+#accordion label + input[type="radio"]:checked + .content {
+    max-height: 400px;
+}
